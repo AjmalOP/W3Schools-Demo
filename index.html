@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                margin: 0;
+                background-color: grey;
+                display: grid;
+            }
+
+
+            
+            .log {
+                margin-top: -50px;
+                margin-left: 90%;
+                width: 10%;
+                height: 38px;
+                padding-top: 12px;
+                background-color: rgba(255, 255, 255, 1);
+            }
+            #log {
+                box-sizing: border-box;
+                width: 10%;
+            }
+            #over {
+                box-sizing: border-box;
+                width: 10%;
+            }
+
+
+
+            .right{
+                margin-top: -50px;
+                margin-left: 60% ;
+                width: 30%;
+                display:flex;
+                flex-wrap: nowrap;
+                justify-content: space-around;          
+                background-color: rgba(255, 255, 255, 1);           
+            }
+            .right > div {
+
+                line-height: 50px;
+                font-size: 15px;
+                text-align: center;
+            }
+            
+            
+
+
+            .space{
+                margin-top: -50px;
+                margin-left: 50% ;
+                width: 10%;
+                display:flex;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                background-color: rgb(255, 255, 255);
+            }
+            .space > div {
+                width: 100%;
+                height: 50px;
+                line-height: 50px;
+                font-size: 20px;
+                align-items: center;
+            }
+
+
+
+
+            .left {
+                width: 50%;
+                display:flex;
+                flex-wrap: nowrap;
+                justify-content: space-between;                
+                background-color: rgba(255, 255, 255, 1);
+                padding-left: 20px;
+                box-sizing: border-box;  
+            }
+            .left > div{
+                background-color: rgba(255, 255, 255, 1);
+                line-height: 50px;
+                font-size: 20px;
+                align-items: center;        
+            }
+            .left > div:hover {
+                background-color: #04AA6D;
+            }
+            #bg:hover{
+                background-color: rgba(0, 0, 0,0);
+            }
+
+
+
+            .bottomleft {
+                width: 80%;
+                display:flex;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                background-color: black;
+                padding-left: 10px;
+                box-sizing: border-box;
+            }
+            .bottomleft > div {
+                align-items: center;
+                line-height: 20px;
+                padding-top: 5px;
+            }
+            .bottomleft > div:hover {
+                background-color: #04AA6D;
+            }
+            #stile{
+                text-decoration: none;
+                color: #ffffff;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+
+
+
+            .bottomspace{
+                margin-left: 80%;
+                margin-top: -29.5px;
+                width: 5%;
+                height: 30px;
+                background-color: black;
+            }
+
+
+
+
+            .bottomright {
+                margin-left: 85%;
+                margin-top: -30px;
+                width: 15%;
+                height: 30px;
+                display:flex;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                background-color: black;
+                padding: 5px;
+                box-sizing: border-box;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+
+
+
+
+        <div class="left">
+            <div id="bg">
+                <a href="https://www.w3schools.com/" >
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/W3Schools_logo.svg" alt="W3Schools_logo" align="center" style="height: 40px; ">
+                </a>
+            </div>
+            <div>
+                <select name="Tutorials" id="tutorial" style="border: 0px; background-color: rgba(0, 0, 0,0); " >
+                    <option selected hidden value="choos">Tutorials</option>
+                    <option value="HTML">HTML</option>
+                    <option value="C++">C++</option>
+                    <option value="C">C</option>
+                    <option value="PYTHON">PYTHON</option>
+                </select>
+            </div>
+            <div>
+                <select name="References" id="reference" style="border: 0px; background-color: rgba(0, 0, 0,0);">
+                    <option selected hidden value="choos">References</option>
+                    <option value="HTML">HTML</option>
+                    <option value="C++">C++</option>
+                    <option value="C">C</option>
+                    <option value="PYTHON">PYTHON</option>
+                </select>
+            </div>
+            <div>
+                <select name="Exercises" id="Exercises" style="border: 0px; background-color: rgba(0, 0, 0,0);">
+                    <option selected hidden value="choos">Exercises</option>
+                    <option value="HTML">HTML</option>
+                    <option value="C++">C++</option>
+                    <option value="C">C</option>
+                    <option value="PYTHON">PYTHON</option>
+                </select>
+            </div>
+            <div> <button onclick="window.location.href='//www.w3schools.com/bootcamp/';" style="border: 0; background-color: rgba(0, 0, 0,0);">Bootcamp</button> </div>
+        </div>
+
+
+
+
+
+        <div class="space">
+            <div></div>
+            <div></div>
+        </div>
+
+
+
+
+
+        <div class="right">
+            <div><input type="button" value="Pro" style="border-radius: 50px; padding: 5px 10px; border: 0px; background-color: black; color: #ffffff; font-size: 15px;"></div>
+            <div><input type="button" value="Get Certified" style="border-radius: 50px; padding: 5px 10px; border: 0px; background-color: #ffb3bb; color: black; font-size: 15px;"></div>
+            <div><input type="button" value="Create Website" style="border-radius: 50px; padding: 5px 10px; border: 0px; background-color: #FFF4A3; color: black; font-size: 15px;"></div>
+        </div>
+
+
+
+
+
+
+        <div class="log">
+            <div id="Log" style="width: 100%; height: 26px; background-color: #8ec8b3; border-radius: 50px;" onMouseOver="this.style.background='#008453'" onMouseOut="this.style.background='#8ec8b3'">
+                <input id="over" onMouseOver="this.style.background='#008453'" onMouseOut="this.style.background='#04AA6D'"
+                type="button" value="Sign Up" style="border: 0; border-radius: 50px; background-color: #04AA6D; width: 50% ;padding: 5px 0px 5px 5px;"><input id="over"
+                onMouseOver="this.style.background='#008453'" onMouseOut="this.style.background='#8ec8b3'"
+                type="button" value="Log in" style="border: 0; border-radius: 50px; background-color: rgba(255, 255, 0, 0); width: 50% ;padding: 5px 5px 5px 0px;">
+            </div>
+        </div>
+
+
+
+
+
+        <div class="bottomleft">
+            <div id="bg"><a href="/icons/preview/white/house-xxl.png"><img src="house-512.png" alt="home" style="width: 20px" ></a></div>
+            <div><a href="https://www.w3schools.com/html/default.asp" id="stile">HTML</a></div>
+            <div><a href="https://www.w3schools.com/css/default.asp" id="stile">CSS</a></div>
+            <div><a href="https://www.w3schools.com/js/default.asp" id="stile">JAVASCRIPT</a></div>
+            <div><a href="https://www.w3schools.com/sql/default.asp"id="stile">SQL</a></div>
+            <div><a href="https://www.w3schools.com/python/default.asp" id="stile">PYTHON</a></div>
+            <div><a href="https://www.w3schools.com/java/default.asp"id="stile">JAVA</a></div>
+            <div><a href="https://www.w3schools.com/php/default.asp" id="stile">PHP</a></div>
+            <div><a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp" id="stile">BOOTSTRAP</a></div>
+            <div><a href="https://www.w3schools.com/howto/default.asp" id="stile">HOWTO</a></div>
+            <div><a href="https://www.w3schools.com/w3css/default.asp" id="stile">W3.CSS</a></div>
+            <div><a href="https://www.w3schools.com/c/index.php" id="stile">C</a></div>
+            <div><a href="https://www.w3schools.com/cpp/default.asp" id="stile">C++</a></div>
+        </div>
+
+
+
+
+        <div class="bottomspace"></div>
+
+
+
+         
+        <div class="bottomright">
+            <div id="bg"><img src="icons8-50--64.png" alt="home" style="width: 20px" ></a></div>
+            <div id="bg"><img src="https://www.iconsdb.com/icons/preview/white/globe-7-xxl.png" alt="home" style="width: 20px" ></a></div>
+            <div id="bg" ><img src="icons8-magnifier-512 (1).png" alt="home" style="width: 20px; padding-top: px;"></div>
+        </div>
+
+
+
+    </body>
+</html>
